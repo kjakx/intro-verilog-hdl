@@ -1,0 +1,5 @@
+vscode:
+  extensions:
+    - mshr-h.veriloghdl@1.3.2:cyWRuQRobZw4rqyVvBuP2w==
+image:
+  file: .gitpod.dockerfile

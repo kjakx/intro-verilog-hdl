@@ -61,16 +61,16 @@ end
 function [3:0] keyenc;
 input [9:0] sw;
     case (sw)
-        10'00000_00001: keyenc = 4'h0;
-        10'00000_00010: keyenc = 4'h1;
-        10'00000_00100: keyenc = 4'h1;
-        10'00000_01000: keyenc = 4'h3;
-        10'00000_10000: keyenc = 4'h4;
-        10'00001_00000: keyenc = 4'h5;
-        10'00010_00000: keyenc = 4'h6;
-        10'00100_00000: keyenc = 4'h7;
-        10'01000_00000: keyenc = 4'h8;
-        10'10000_00000: keyenc = 4'h9;
+        10'b00000_00001: keyenc = 4'h0;
+        10'b00000_00010: keyenc = 4'h1;
+        10'b00000_00100: keyenc = 4'h1;
+        10'b00000_01000: keyenc = 4'h3;
+        10'b00000_10000: keyenc = 4'h4;
+        10'b00001_00000: keyenc = 4'h5;
+        10'b00010_00000: keyenc = 4'h6;
+        10'b00100_00000: keyenc = 4'h7;
+        10'b01000_00000: keyenc = 4'h8;
+        10'b10000_00000: keyenc = 4'h9;
     endcase
 endfunction
 

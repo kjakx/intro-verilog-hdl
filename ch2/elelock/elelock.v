@@ -43,7 +43,7 @@ always @(posedge ck or posedge reset) begin
     end
     else begin
         ke2 <= ke1;
-        ke1 <= | tenkey
+        ke1 <= | tenkey;
     end
 end
 
@@ -80,6 +80,6 @@ assign match = (key[0] == SECRET_0)
             && (key[2] == SECRET_2)
             && (key[3] == SECRET_3);
 
-assign key_enbl = ~ke2 + ke1;
+assign key_enbl = ~ke2 & ke1;
 
 endmodule
